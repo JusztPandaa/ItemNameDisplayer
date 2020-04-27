@@ -6,7 +6,6 @@ namespace Dapro718\ItemNameDisplayer;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\entity\object\Item;
-use pocketmine\item\Item;
 use pocketmine\utils\Config;
 
 class Main extends PluginBase {
