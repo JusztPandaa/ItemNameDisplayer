@@ -14,7 +14,7 @@ class Main extends PluginBase {
   
   public function onEnable() {
     $this->config = $this->getConfig();
-    $this->getServer()->getPluginManager->registerEvents(new NameDisplayer($this), $this);
+    $this->getServer()->getPluginManager()->registerEvents(new NameDisplayer($this), $this);
   }
   
   public function setItemDisplayName($item) {
