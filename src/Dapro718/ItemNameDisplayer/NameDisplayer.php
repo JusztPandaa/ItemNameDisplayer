@@ -6,8 +6,8 @@ namespace Dapro718\ItemNameDisplayer;
 
 use pocketmine\event\Listener;
 use pocketmine\item\Item;
-use pocketmine\event
-use pocketmine\utils\Config
+use pocketmine\event\entity\ItemSpawnEvent;
+use pocketmine\utils\Config;
 
 class NameDisplayer implements Listener {
   
