@@ -20,7 +20,7 @@ class NameDisplayer implements Listener {
   }
   
   public function onItemDrop(ItemSpawnEvent $event) {
-    $item = $event->getItem();
+    $item = $event->getEntity();
     $id = $item->getId();
     $disabledItems = $this->config->get("disabled-items");
     if(!in_array($id, $disabledItems, TRUE)) {
