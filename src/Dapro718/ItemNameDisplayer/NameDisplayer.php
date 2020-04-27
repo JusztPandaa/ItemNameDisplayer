@@ -8,6 +8,7 @@ use pocketmine\event\Listener;
 use pocketmine\item\Item;
 use pocketmine\event\entity\ItemSpawnEvent;
 use pocketmine\utils\Config;
+use Dapro718\ItemNameDisplayer\Main;
 
 class NameDisplayer implements Listener {
   
