@@ -13,7 +13,7 @@ class Main extends PluginBase {
   
   public $config;
   
-  public function onEnable() void: {
+  public function onEnable() {
     $this->config = $this->getConfig();
     $this->getServer()->getPluginManager->registerEvents(new NameDisplayer($this), $this);
   }
@@ -38,9 +38,3 @@ class Main extends PluginBase {
     $item->setNameTag($displayName);
   }
 }
-
-    
-      
-    
-    
-
