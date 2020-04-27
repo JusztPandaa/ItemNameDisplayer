@@ -1,0 +1,6 @@
+name: ItemNameDisplayer
+description: Displays the name of items on the ground.
+main: Dapro718\ItemDisplayer\Main
+version: 0.0.1
+api: 3.0.0
+author: Dapro718
