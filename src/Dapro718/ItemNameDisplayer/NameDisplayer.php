@@ -26,7 +26,7 @@ class NameDisplayer implements Listener {
     $disabledItems = $this->config->get("disabled-items");
     if(!in_array($id, $disabledItems, TRUE)) {
       $displayName = $this->plugin->setItemDisplayName($item);
-      $this->plugin->setItemDisplay();
+      $this->plugin->displayName();
     }
   }
 }
