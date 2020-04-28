@@ -28,6 +28,7 @@ class Main extends PluginBase {
       $name = $item->getNameTag();
       $format = $this->config->get("display-format");
       $displayName = str_replace("{name}", $name, $format);
+      return $displayName;
     }
   }
   public function displayName($item, $displayName) {
