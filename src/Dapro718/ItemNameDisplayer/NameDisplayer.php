@@ -7,6 +7,7 @@ namespace Dapro718\ItemNameDisplayer;
 use pocketmine\event\Listener;
 use pocketmine\item\Item;
 use pocketmine\event\entity\ItemSpawnEvent;
+use pocketmine\event\player\PlayerDropItemEvent;
 use pocketmine\utils\Config;
 use Dapro718\ItemNameDisplayer\Main;
 
@@ -29,5 +30,11 @@ class NameDisplayer implements Listener {
       $displayName = $this->plugin->setItemDisplayName($item);
       $this->plugin->displayName($item, $displayName);
     }
+  }
+  
+  public function onPlayerItemDrop(PlayerDropItemEvent $event) {
+    $item = $event->getItem();
+    $displayName = $this->plugin->setItemDisplayName($item);
+    $this->plugin->displayName($item, $displayName);
   }
 }
