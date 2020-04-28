@@ -19,12 +19,18 @@ class Main extends PluginBase {
   }
   
   public function setItemDisplayName($item) {
-      $name = $item->getNameTag();
+    $item = $event->getEntity()->getItem();
+    if($item->getItem() === $item->hasCustomName()) {
+      $name = $item->getCustomName();
       $format = $this->config->get("display-format");
       $displayName = str_replace("{name}", $name, $format);
       return $displayName;
+    } else {
+      $name = $item->getNameTag();
+      $format = $this->config->get("display-format");
+      $displayName = str_replace("{name}", $name, $format);
+    }
   }
-  
   public function displayName($item, $displayName) {
     $item->setNameTagVisible(true);
     $item->setNameTagAlwaysVisible(true);
