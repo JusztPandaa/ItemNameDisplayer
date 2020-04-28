@@ -19,7 +19,7 @@ class Main extends PluginBase {
   }
   
   public function setItemDisplayName($item) {
-    if($item->getItem() === $item->hasCustomName()) {
+    if($item->hasCustomName()) {
       $name = $item->getCustomName();
       $format = $this->config->get("display-format");
       $displayName = str_replace("{name}", $name, $format);
