@@ -15,6 +15,7 @@ class NameDisplayer implements Listener {
   
   public $config;
   public $plugin;
+  public $entity;
   
   public function __construct(Main $plugin) {
     $this->plugin = $plugin;
@@ -22,17 +23,21 @@ class NameDisplayer implements Listener {
   }
   
   public function onItemDrop(ItemSpawnEvent $event) {
-    $entity = $event->getEntity();
+    $this->entity = $event->getEntity();
     $item = $entity->getItem();
     $id = $item->getId();
     $disabledItems = $this->config->get("disabled-items");
     if(!in_array($id, $disabledItems, true)) {
-      $this->plugin->displayName($item);
+      $this->plugin->displayName($entity);
     }
   }
   
   public function onPlayerItemDrop(PlayerDropItemEvent $event) {
     $item = $event->getItem();
-    $this->plugin->displayName($item);
+    $id = $item->getId();
+    $disabledItems = $this->config->get("disabled-items");
+    if(!in_array($id, $disabledItems, true)) {
+      $this->plugin->displayName($this->entity);
+    }
   }
 }
