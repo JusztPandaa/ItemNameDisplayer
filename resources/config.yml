@@ -12,6 +12,6 @@
 display-format: '{name}'
 
 
-# List all the items you dont want names to be displayed. P
+# List all the items you dont want names to be displayed.
 
 disabled-items: []
