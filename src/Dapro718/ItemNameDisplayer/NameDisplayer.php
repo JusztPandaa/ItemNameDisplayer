@@ -21,7 +21,8 @@ class NameDisplayer implements Listener {
   }
   
   public function onItemDrop(ItemSpawnEvent $event) {
-    $item = $event->getEntity();
+    $entity = $event->getEntity();
+    $item = $entity->getItem()
     $id = $item->getId();
     $disabledItems = $this->config->get("disabled-items");
     if(!in_array($id, $disabledItems, TRUE)) {
