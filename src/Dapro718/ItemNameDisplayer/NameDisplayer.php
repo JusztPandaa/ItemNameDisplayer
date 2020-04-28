@@ -27,13 +27,12 @@ class NameDisplayer implements Listener {
     $id = $item->getId();
     $disabledItems = $this->config->get("disabled-items");
     if(!in_array($id, $disabledItems, true)) {
-      $this->plugin->displayName($item, $displayName);
+      $this->plugin->displayName($item);
     }
   }
   
   public function onPlayerItemDrop(PlayerDropItemEvent $event) {
     $item = $event->getItem();
-    $displayName = $this->plugin->setItemDisplayName($item);
-    $this->plugin->displayName($item, $displayName);
+    $this->plugin->displayName($item);
   }
 }
