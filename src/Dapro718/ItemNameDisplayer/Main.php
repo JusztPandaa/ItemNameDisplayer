@@ -20,9 +20,4 @@ class Main extends PluginBase {
     $this->config = $this->getConfig();
     $this->getServer()->getPluginManager()->registerEvents(new NameDisplayer($this), $this);
   }
-  
-  public function displayName($entity) {
-    $entity->setNameTagVisible(true);
-    $entity->setNameTagAlwaysVisible(true);
-  }
 }
