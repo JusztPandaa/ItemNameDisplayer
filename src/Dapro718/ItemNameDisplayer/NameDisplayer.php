@@ -15,7 +15,6 @@ class NameDisplayer implements Listener {
   
   public $config;
   public $plugin;
-  public $entity;
   
   public function __construct(Main $plugin) {
     $this->plugin = $plugin;
@@ -23,12 +22,10 @@ class NameDisplayer implements Listener {
   }
   
   public function onItemDrop(ItemSpawnEvent $event) {
-    $this->entity = $event->getEntity();
-    $item = $this->entity->getItem();
-    $id = $item->getId();
-    $disabledItems = $this->config->get("disabled-items");
-    if(!in_array($id, $disabledItems, true)) {
-      $this->plugin->displayName($this->entity);
-    }
+    $entity = $event->getEntity();
+    $this->plugin->getServer()->broadcastMessage("Drop Event Activated");
+    $item = $this->getItem();
+    $entity->setNameTagVisible(true);
+    $entity->setNameTagAlwaysVisible(true);
   }
 }
