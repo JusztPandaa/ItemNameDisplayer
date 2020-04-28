@@ -19,7 +19,6 @@ class Main extends PluginBase {
   }
   
   public function setItemDisplayName($item) {
-    $item = $event->getEntity()->getItem();
     if($item->getItem() === $item->hasCustomName()) {
       $name = $item->getCustomName();
       $format = $this->config->get("display-format");
