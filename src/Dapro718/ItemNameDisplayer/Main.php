@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Dapro718\ItemNameDisplayer;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\entity\object\Item;
+use pocketmine\entity\object\ItemEntity;
 use pocketmine\utils\Config;
 
 
