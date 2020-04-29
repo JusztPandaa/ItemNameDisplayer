@@ -45,7 +45,7 @@ There are no permissions for this plugin.
 
 # Ideas
 
-Have any ideas for this plugin? Or do you have a plugin request? 
+Have any ideas for this plugin?
 Send your ideas to Dapro#3132 on Discord!
 
 # Support
