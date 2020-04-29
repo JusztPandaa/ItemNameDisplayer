@@ -23,7 +23,10 @@ class NameDisplayer implements Listener {
   
   public function onItemDrop(ItemSpawnEvent $event) {
     $entity = $event->getEntity();
+    $item = $entity->getItem();
+    $name = $item->getName();
     $this->plugin->getServer()->broadcastMessage("Drop Event Activated");
+    $entity->setNameTag($name);
     $entity->setNameTagVisible(true);
     $entity->setNameTagAlwaysVisible(true);
   }
