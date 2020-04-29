@@ -25,7 +25,7 @@ class NameDisplayer implements Listener {
     $entity = $event->getEntity();
     $item = $entity->getItem();
     $name = $item->getName();
-    $fcon = $this->config->get("display-format")
+    $fcon = $this->config->get("display-format");
     $format = str_replace("{name}", $name, $fcon);
     $entity->setNameTag($format);
     $entity->setNameTagVisible(true);
