@@ -16,13 +16,14 @@ Any item on the ground will have its name float above it. Custom names are suppo
 * Ability to disable certain item display names.
 * Ability to disable certain worlds from displaying item names.
 
-\
+
 \
 ### Planned Addons:
 * Multi language support.
 # Config
 
 ```
+config-version: 2
 # Displays the name of items on the groud.
 # DM Dapro#3132 if you need any help.
 
@@ -37,8 +38,12 @@ Any item on the ground will have its name float above it. Custom names are suppo
 display-format: '{name}'
 
 
-# List all the items you dont want names to be displayed.
+# Edit all the worlds that you dont want item names to be displayed
+disabled-worlds: 
+- 'ExampleWorld'
 
+
+# List all the items you dont want names to be displayed. Use item id's.
 disabled-items: []
 ```
 \
@@ -46,7 +51,9 @@ disabled-items: []
 Explanation:
 | Setting | Description |
 | --- | --- |
-| `display-format` | Edits the format of the floating text above every item on the ground. |
+| `config-version` | DO NOT TOUCH. If changed, the config will be reset. |
+| `display-format` | Edit the format of the floating text above every item on the ground. |
+| `disabled-worlds` | Item names will not display in the worlds listed here. |
 | `disabled-Items` | Items listed here will not have their names float above them. |
 
 # Permissions
