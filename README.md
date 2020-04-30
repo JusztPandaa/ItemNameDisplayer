@@ -10,6 +10,16 @@ Any item on the ground will have its name float above it. Custom names are suppo
 
 4. Edit config to change up formats and to disable certain items.
 
+# Features
+### Current Features:
+* Editable format.
+* Ability to disable certain item display names.
+* Ability to disable certain worlds from displaying item names.
+
+\
+\
+### Planned Addons:
+* Multi language support.
 # Config
 
 ```
