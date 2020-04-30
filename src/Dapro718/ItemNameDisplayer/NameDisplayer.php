@@ -26,8 +26,6 @@ class NameDisplayer implements Listener {
     $level = $entity->getLevel();
     $item = $entity->getItem();
     $id = $item->getId();
-    var_dump($level);
-    var_dump($id);
     $disabledWorlds = $this->config->get("disabled-worlds");
     $disabledItems = $this->config->get("disabled-items");
     $name = $item->getName();
