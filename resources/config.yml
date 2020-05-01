@@ -2,12 +2,6 @@ config-version: 2
 # Displays the name of items on the groud.
 # DM Dapro#3132 if you need any help.
 
-# Imperial Network
-# Ip: play-imperialpe.xyz
-# Port: 19132
-# Discord: https://discord.gg/GdtwwuG
-# Website: imperialpe.xyz
-
 
 # Edit the name format use '§' for colors and {name} for the item's name.
 display-format: '{name}'
