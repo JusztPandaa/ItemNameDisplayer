@@ -23,7 +23,8 @@ class NameDisplayer implements Listener {
   
   public function onItemDrop(ItemSpawnEvent $event) {
     $entity = $event->getEntity();
-    $level = $entity->getLevel();
+    $lvl = $entity->getLevel();
+    $level = $lvl->getName();
     $item = $entity->getItem();
     $id = $item->getId();
     $disabledWorlds = $this->config->get("disabled-worlds");
