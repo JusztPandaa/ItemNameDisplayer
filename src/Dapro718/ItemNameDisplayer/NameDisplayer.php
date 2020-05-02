@@ -31,14 +31,12 @@ class NameDisplayer implements Listener {
     $disabledItems = $this->config->get("disabled-items");
     $name = $item->getName();
     $fcon = $this->config->get("display-format");
-    echo("$entity entity");
-    echo("$level level");
-    echo("$item item");
-    echo("$id id");
-    print_r("$disabledWorlds words");
-    print_r("$DisabledItems items");
-    echo("$name name");
-    echo("$fcon format");
+    echo("$entity entity\n");
+    echo("$level level\n");
+    echo("$item item\n");
+    echo("$id id\n");
+    echo("$name name\n");
+    echo("$fcon format\n");
     if(in_array($level, $disabledWorlds, TRUE)) {
       $event->setCancelled();
       echo("world");
