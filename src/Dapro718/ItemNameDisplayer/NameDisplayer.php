@@ -35,8 +35,8 @@ class NameDisplayer implements Listener {
     echo("$level level");
     echo("$item item");
     echo("$id id");
-    echo("$disabledWorlds words");
-    echo("$DisabledItems items");
+    print_r("$disabledWorlds words");
+    print_r("$DisabledItems items");
     echo("$name name");
     echo("$fcon format");
     if(in_array($level, $disabledWorlds, TRUE)) {
