@@ -17,7 +17,7 @@ Any item on the ground will have its name float above it. Custom names are suppo
 * Ability to disable certain worlds from displaying item names.
 
 
-\
+
 ### Planned Addons:
 * Multi language support.
 # Config
@@ -26,12 +26,6 @@ Any item on the ground will have its name float above it. Custom names are suppo
 config-version: 2
 # Displays the name of items on the groud.
 # DM Dapro#3132 if you need any help.
-
-# Imperial Network
-# Ip: play-imperialpe.xyz
-# Port: 19132
-# Discord: https://discord.gg/GdtwwuG
-# Website: imperialpe.xyz
 
 
 # Edit the name format use '§' for colors and {name} for the item's name.
@@ -54,7 +48,7 @@ Explanation:
 | `config-version` | DO NOT TOUCH. If changed, the config will be reset. |
 | `display-format` | Edit the format of the floating text above every item on the ground. |
 | `disabled-worlds` | Item names will not display in the worlds listed here. |
-| `disabled-Items` | Items listed here will not have their names float above them. |
+| `disabled-items` | Items listed here will not have their names float above them. |
 
 # Permissions
 
