@@ -31,10 +31,15 @@ class NameDisplayer implements Listener {
     $disabledWorlds = $this->config->get("disabled-worlds");
     $disabledItems = $this->config->get("disabled-items");
     $name = $item->getName();
-    $fcon = $this->config->get("display-format");
+    $format = $this->config->get("display-format");
     if(!in_array($level, $disabledWorlds, TRUE)) {
       if(!in_array($id, $disabledItems, TRUE)) {
-        $format = str_replace(["{name}", "{count}"], [$name, $count], $fcon);
+        if(strpos($format, "{name}") !== false) {
+          $format = str_replace("{name}", $name, $format);
+        }
+        if(strpos($format, "{count}") !== false) {
+          $format = str_replace("{count", $count, $format);
+        }
         $entity->setNameTag($format);
         $entity->setNameTagVisible(true);
         $entity->setNameTagAlwaysVisible(true);
