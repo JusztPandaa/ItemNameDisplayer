@@ -23,13 +23,15 @@ Any item on the ground will have its name float above it. Custom names are suppo
 # Config
 
 ```
-config-version: 2
+config-version: 3
 # Displays the name of items on the groud.
 # DM Dapro#3132 if you need any help.
 
 
-# Edit the name format use '§' for colors and {name} for the item's name.
-display-format: '{name}'
+# Edit the name format use '§' for colors.
+# {name} - Name of the item.
+# {count} - Amount of the item.
+display-format: '{name} x{count}'
 
 
 # Edit all the worlds that you dont want item names to be displayed
