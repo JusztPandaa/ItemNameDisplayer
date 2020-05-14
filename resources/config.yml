@@ -8,9 +8,6 @@ config-version: 3
 # {count} - Amount of the item.
 display-format: '{name} x{count}'
 
-# Wether to show the count when there is only one item.
-single-item-count: false
-
 
 # Edit all the worlds that you dont want item names to be displayed
 disabled-worlds: 
