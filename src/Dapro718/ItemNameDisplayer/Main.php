@@ -15,7 +15,7 @@ use pocketmine\utils\Config;
 class Main extends PluginBase {
   
   public $config;
-  private const CONFIG_VERSION = 2;
+  private const CONFIG_VERSION = 3;
   
   public function onEnable() {
     $this->config = $this->getConfig();
