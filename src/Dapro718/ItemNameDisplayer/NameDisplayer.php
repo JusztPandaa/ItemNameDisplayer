@@ -38,7 +38,7 @@ class NameDisplayer implements Listener {
           $format = str_replace("{name}", $name, $format);
         }
         if(strpos($format, "{count}") !== false) {
-          $format = str_replace("{count", $count, $format);
+          $format = str_replace("{count}", $count, $format);
         }
         $entity->setNameTag($format);
         $entity->setNameTagVisible(true);
